@@ -100,7 +100,7 @@
 // document.write(resultat)
 
 
-// ----------------------------forEach
+// ----------------------------forEach 1
 
 const students = ['John', 'Sara', 'Jack'];
 
@@ -109,7 +109,7 @@ students.forEach((item)=>{
     console.log(`hi ${item}`);
 })
 
-
+//------------------------- forEach 2
 const arrayItems = ['item1', 'item2', 'item3'];
 const copyItems = [];
 
@@ -118,5 +118,10 @@ arrayItems.forEach((item)=>{
 })
 console.log(copyItems);
 
-
-
+//------------------------- forEach 2
+const scores = [5, 8, 3, 10, 7];
+newArray=[]
+scores.forEach((item)=>{
+    newArray.push(3*item)  
+})
+console.log(newArray);
