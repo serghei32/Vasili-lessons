@@ -105,7 +105,6 @@
  const students = ['John', 'Sara', 'Jack'];
 
  students.forEach((item) => {
-     if (item)
          console.log(`hi ${item}`);
  })
 
@@ -126,7 +125,7 @@
  })
  console.log(newArray);
 
- let res = scores.includes(9)
+ let res = scores.includes(8)
  console.log(res);
  //*********************************************************************
 
