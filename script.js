@@ -72,78 +72,78 @@
  // -------- 5 task ---
 
 
- //   const week = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
- //   const weekNode = document.querySelector('.week')
- //   const ulNode = document.createElement('ul')
- //   weekNode.appendChild(ulNode)
+ //    const week = ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+ //    const weekNode = document.querySelector('.week')
+ //    const ulNode = document.createElement('ul')
+ //    weekNode.appendChild(ulNode)
 
- //   for (let i = 0; i < week.length; i++) { // счетчик будет сравниваться с индексами масива и шагать вперед 
- //       const liNode = document.createElement('li')// sozdal ellement
- //       liNode.textContent = week[i] // pomestil v etot element tekstovii uzel . тут в i будет отображаться значение счетчика на каждой итерации а не значение индекса. 
- //       ulNode.appendChild(liNode) // zasunul li v ul
- //       console.log(i);
+ //    for (let i = 0; i < week.length; i++) { // счетчик будет сравниваться с индексами масива и шагать вперед 
+ //        const liNode = document.createElement('li')// sozdal ellement
+ //        liNode.textContent = week[i] // pomestil v etot element tekstovii uzel . тут в i будет отображаться значение счетчика на каждой итерации а не значение индекса. 
+ //        ulNode.appendChild(liNode) // zasunul li v ul
+ //        console.log(i);
 
- //       if (i === 5 || i === 6) { // значение счетчика сравниваем с значениями сб и вс которые имеют индекс  5 и 6 
- //           liNode.style.fontWeight= 'bold' // пишем nodeЭллементу стилистику
- //       }
- //   }
+ //        if (i === 5 || i === 6) { // значение счетчика сравниваем с значениями сб и вс которые имеют индекс  5 и 6 
+ //            liNode.style.fontWeight= 'bold' // пишем nodeЭллементу стилистику
+ //        }
+ //    }
 
- //---------------------------------------------
-
-
- //  const numberss = [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12]
- // const resultat=[]
- //  for(let i =0; i<numberss.length; i++){
- //     if(numberss[i]>0 && numberss[i] <10 ) // сравниваю значение масива которое итерируется 
- //         resultat.push(numberss[i]) // вытаскиваю значение масива а не индекс   
- // }
- // document.write(resultat)
+ //  //---------------------------------------------
 
 
- // ----------------------------forEach 1
+ //   const numberss = [1, 2, 4, -1, -3, 8, 7, 0, -5, 18, 12]
+ //  const resultat=[]
+ //   for(let i =0; i<numberss.length; i++){
+ //      if(numberss[i]>0 && numberss[i] <10 ) // сравниваю значение масива которое итерируется 
+ //          resultat.push(numberss[i]) // вытаскиваю значение масива а не индекс   
+ //  }
+ //  document.write(resultat)
 
- const students = ['John', 'Sara', 'Jack'];
 
- students.forEach((item) => {
-         console.log(`hi ${item}`);
- })
+ //  // ----------------------------forEach 1
 
- //------------------------- forEach 2
- const arrayItems = ['item1', 'item2', 'item3'];
- const copyItems = [];
+ //  const students = ['John', 'Sara', 'Jack'];
 
- arrayItems.forEach((item) => {
-     copyItems.push(item)
- })
- console.log(copyItems);
+ //  students.forEach((item) => {
+ //          console.log(`hi ${item}`);
+ //  })
 
- //------------------------- forEach 3
- const scores = [5, 8, 3, 10, 7];
- newArray = []
- scores.forEach((item) => {
-     newArray.push(3 * item)
- })
- console.log(newArray);
+ //  //------------------------- forEach 2
+ //  const arrayItems = ['item1', 'item2', 'item3'];
+ //  const copyItems = [];
 
- let res = scores.includes(8)
- console.log(res);
- //*********************************************************************
+ //  arrayItems.forEach((item) => {
+ //      copyItems.push(item)
+ //  })
+ //  console.log(copyItems);
 
- const courses = ['Biology', 'Mathematics', 'Chemistry', 'Physics'];
+ //  //------------------------- forEach 3
+ //  const scores = [5, 8, 3, 10, 7];
+ //  newArray = []
+ //  scores.forEach((item) => {
+ //      newArray.push(3 * item)
+ //  })
+ //  console.log(newArray);
 
- courses.forEach((item, index) => {
-     console.log(`${index}: ${item}`);
- })
+ //  let res = scores.includes(8)
+ //  console.log(res);
+ //  //*********************************************************************
 
- const grade = [33, 90, 78, 94, 56, 88, 97];
- result = []
- grade.forEach((item) => {
-     if (item > 70) {
-         result.push(item)
+ //  const courses = ['Biology', 'Mathematics', 'Chemistry', 'Physics'];
 
-     }
- })
- console.log(result);
+ //  courses.forEach((item, index) => {
+ //      console.log(`${index}: ${item}`);
+ //  })
+
+ //  const grade = [33, 90, 78, 94, 56, 88, 97];
+ //  result = []
+ //  grade.forEach((item) => {
+ //      if (item > 70) {
+ //          result.push(item)
+
+ //      }
+ //  })
+ //  console.log(result);
  //********************************************************************* 
 
  //  const numbers = [1, 2, 3, 4, 5];
@@ -156,25 +156,86 @@
 
  //Умножение каждого элемента
 
- const numbers = [10, 20, 30];
- const summery = []
- numbers.forEach((item) => {
-     let result = item * 2
-     summery.push(result)
- })
- console.log(summery);
+ //  const numbers = [10, 20, 30];
+ //  const summery = []
+ //  numbers.forEach((item) => {
+ //      let result = item * 2
+ //      summery.push(result)
+ //  })
+ //  console.log(summery);
 
 
- //Напишите код, который создаёт массив из длин строк, используя forEach.
- const words = ['apple', 'banana', 'cherry'];
- const length = []
- words.forEach((item, index) => {
-     length.push(item.length)
-     length.push(index)
-     
- })
+ //  //Напишите код, который создаёт массив из длин строк, используя forEach.
+ //  const words = ['apple', 'banana', 'cherry'];
+ //  const length = []
+ //  words.forEach((item, index) => {
+ //      length.push(item.length)
+ //      length.push(index)
 
- console.log(length);
+ //  })
 
+ //  console.log(length);
 
- 
+ const container_box = document.querySelector('.box')
+ const inp = document.querySelector('.input_text');
+ const button1 = document.querySelector('.btn')
+ button1.addEventListener(`click`, functionBtn)
+
+ function functionBtn() {
+     let check = false
+     cars.forEach((item) => {
+        // let x= 10
+        //   console.log(x);
+         if (item.model === inp.value) {
+            check = true
+             container_box.innerHTML = `
+            <li>${item.year}</li>
+            <li>${item.color}</li>
+            <li>${item.price}</li>
+            `
+         }
+     })
+     if (check===false){
+        console.log(`wrang`);
+        container_box.innerHTML=`<p> wrang value!!</p>`
+        
+     }
+
+ }
+
+ const cars = [{
+         model: 'Mustang',
+         year: 1964,
+         engine: 'V8',
+         color: 'Red',
+         price: 100000
+     },
+     {
+         model: 'Camaro',
+         year: 1967,
+         engine: 'V8',
+         color: 'Blue',
+         price: 95000
+     },
+     {
+         model: 'Challenger',
+         year: 1970,
+         engine: 'V8',
+         color: 'Black',
+         price: 110000
+     },
+     {
+         model: 'Corvette',
+         year: 1963,
+         engine: 'V8',
+         color: 'Yellow',
+         price: 120000
+     },
+     {
+         model: 'Firebird',
+         year: 1969,
+         engine: 'V8',
+         color: 'Green',
+         price: 105000
+     }
+ ];
