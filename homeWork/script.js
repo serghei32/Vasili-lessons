@@ -466,11 +466,15 @@ const items = [{
     },
 ];
 
-// //1 Найдите первый элемент массива, у которого индекс четный.
-// const item1= items.find((item, index) =>
-// index % 2 === 0
-// )
-// console.log(item1);
+// const item= items.find((it,index)=>it.name==='Alice')
+// console.log(item);
+
+
+//1 Найдите первый элемент массива, у которого индекс четный.
+const item1 = items.find((item, index) =>
+    index % 2 === 0
+)
+console.log(item1);
 
 // const item2 = items.find((item, index) =>
 //     item.name==='Alex' && index<2);
@@ -500,3 +504,83 @@ const items = [{
 //     console.log('mimo');
 
 // }
+
+// let arr = [5, 10, 15, 20, 25, 30];
+
+// const item1= arr.indexOf(25)
+// console.log(item1);
+// console.log(item1);
+
+
+// let str = "Сегодня хороший день для прогулки";
+// const item2= str.indexOf('д')
+// console.log(item2);
+
+
+// let str1 = "Алфавит начинается с буквы А";
+// const item3 = str1.indexOf("а", 5);
+// console.log(item3);
+
+
+// let arr = [10, 20, 30, 40, 50]; 
+// const item=arr.indexOf(50)
+// console.log(item);
+
+
+//******************************************filter()   
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// const newArr = numbers.filter(item => item > 5)
+// console.log(newArr);
+// console.log(numbers);
+
+// const strings = ['a', 'ab', 'abc', 'abcd', 'abcde']; 
+// const item = strings.filter(enhet=> enhet.length>3)
+// console.log(item);
+
+//2
+// const users = [
+//     { name: 'John', age: 25 },
+//     { name: 'Alex', age: 17 },
+//     { name: 'Emma', age: 22 },
+//     { name: 'Sophia', age: 15 }
+// ];
+
+//3
+// const people = users.filter(item=> item.age>18)
+// console.log(people);
+//4
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+// const num = numbers.filter(item => item % 3 === 0)
+// console.log(num);
+
+// const strings = ['Apple', 'Banana', 'Avocado', 'Grapes'];
+// const frukt= strings.filter(item=>item.startsWith('A'))
+// console.log(frukt);
+
+// const products = [
+//     { name: 'Product1', price: 40 },
+//     { name: 'Product2', price: 60 },
+//     { name: 'Product3', price: 70 }
+// ];
+
+
+// const box = products.filter(item=>item.price>40)
+// console.log(box);
+
+// const products = [
+//     { name: 'Product1', inStock: true },
+//     { name: 'Product2', inStock: false },
+//     { name: 'Product3', inStock: true }
+// ];
+
+// const box=products.filter(item=>item.inStock)
+// console.log(box);
+
+// const itemss = ['JavaScript', 'Java', 'C++', 'Python', 'JavaFX'];
+// const item = itemss.filter(enhet=>enhet.includes('Java'))  
+// console.log(item);
+
+// const numbers = [1, 3, 5, 7, 9, 10, 12, 15];
+// const num = numbers.filter(item => item % 3===0 || item % 5===0)
+// console.log(num);
