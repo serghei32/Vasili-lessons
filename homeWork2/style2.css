@@ -1,0 +1,48 @@
+
+ul{
+    list-style: none;
+}
+.holidays {
+    color: red;
+    font-weight: bold;
+}
+
+.red_font {
+    color: red;
+}
+
+
+.box3 {
+    display: flex;
+    justify-content: space-around;
+    max-width: 80%;
+    margin: 0 auto;
+
+}
+
+.ul_list {
+    width: 80%;
+    border: 1px solid red;
+}
+.list_item {
+    /* max-width: 100%; */
+    /* width: 100%; */
+    /* gap: 10px; */
+}
+
+.bg_light_blue {
+    background-color: lightblue;
+}
+
+.bg_dark_blue {
+    background-color: lightseagreen;
+}
+
+.default {
+    background-color: lightpink;
+}
+
+
+/* .hover_btn:hover {
+    opacity: 0.8;
+} */

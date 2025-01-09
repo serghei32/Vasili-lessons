@@ -410,71 +410,74 @@
 
 // ***************************index in find()
 
-const items = [{
-        name: 'John',
-        age: 25,
-        isActive: true,
-        price: 40
-    },
-    {
-        name: 'Alex',
-        age: 30,
-        isActive: false,
-        price: 60
-    },
-    {
-        name: 'Emma',
-        age: 22,
-        isActive: true,
-        price: 45
-    },
-    {
-        name: 'Sophia',
-        age: 27,
-        isActive: true,
-        price: 70
-    },
-    {
-        name: 'Michael',
-        age: 35,
-        isActive: false,
-        price: 55
-    },
-    {
-        name: 'Jake',
-        age: 29,
-        isActive: true,
-        price: 20
-    },
-    {
-        name: 'Laura',
-        age: 40,
-        isActive: false,
-        price: 80
-    },
-    {
-        name: 'Steve',
-        age: 18,
-        isActive: true,
-        price: 15
-    },
-    {
-        name: 'Alice',
-        age: 23,
-        isActive: false,
-        price: 35
-    },
-];
+// const items = [{
+//         name: 'John',
+//         age: 25,
+//         isActive: true,
+//         price: 40
+//     },
+//     {
+//         name: 'Alex',
+//         age: 30,
+//         isActive: false,
+//         price: 60
+//     },
+//     {
+//         name: 'Emma',
+//         age: 22,
+//         isActive: true,
+//         price: 45
+//     },
+//     {
+//         name: 'Sophia',
+//         age: 27,
+//         isActive: true,
+//         price: 70
+//     },
+//     {
+//         name: 'Michael',
+//         age: 35,
+//         isActive: false,
+//         price: 55
+//     },
+//     {
+//         name: 'Jake',
+//         age: 29,
+//         isActive: true,
+//         price: 20
+//     },
+//     {
+//         name: 'Laura',
+//         age: 40,
+//         isActive: false,
+//         price: 80
+//     },
+//     {
+//         name: 'Steve',
+//         age: 18,
+//         isActive: true,
+//         price: 15
+//     },
+//     {
+//         name: 'Alice',
+//         age: 23,
+//         isActive: false,
+//         price: 35
+//     },
+// ];
+
+
+
 
 // const item= items.find((it,index)=>it.name==='Alice')
 // console.log(item);
 
 
 //1 Найдите первый элемент массива, у которого индекс четный.
-const item1 = items.find((item, index) =>
-    index % 2 === 0
-)
-console.log(item1);
+// const item1 = items.find((item, index) =>
+//     index % 2 === 0
+// )
+// console.log(item1);
 
 // const item2 = items.find((item, index) =>
 //     item.name==='Alex' && index<2);
@@ -584,3 +587,107 @@ console.log(item1);
 // const numbers = [1, 3, 5, 7, 9, 10, 12, 15];
 // const num = numbers.filter(item => item % 3===0 || item % 5===0)
 // console.log(num);
+
+
+
+// const users = [{
+//         name: 'James',
+//         height: 172,
+//         mass: 77,
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Robert',
+//         height: 202,
+//         mass: 136,
+//         eye_color: 'yellow',
+//         gender: 'male',
+//     },
+//     {
+//         name: 'Leia',
+//         height: 150,
+//         mass: 49,
+//         eye_color: 'brown',
+//         gender: 'female',
+//     },
+//     {
+//         name: 'John',
+//         height: 188,
+//         mass: 84,
+//         eye_color: 'blue',
+//         gender: 'male',
+//     },
+// ];
+
+// const man = users.filter(item => item.mass > 100)
+// console.log(man);
+
+// const container = document.querySelector('.box1')
+// users.forEach(element => {
+
+    // if(element.gender==='male'){
+    //     container.innerHTML+=`
+    //     <div class='frame_men'>
+    //         <p>${element.name}</p>
+    //         <p>${element.gender}</p>
+    //     </div>
+    //     `
+    // }
+    // else{
+    //     container.innerHTML+=`
+    //     <div class='frame_women'>
+    //         <p>${element.name}</p>
+    //         <p>${element.gender}</p>
+    //     </div>
+    //     `
+    // }
+
+//     const elem = (element.gender === 'male') ? 'frame_m' : 'frame_w'
+//     container.innerHTML += `
+//     <div class='${elem}'>
+//         <p>${element.name}</p>
+//         <p>${element.gender}</p>
+//     </div>
+//     `
+// });
+
+// Создать алгоритм, который запросит у пользователя температуру на улице. Если введенное значение
+// окажется больше 15, то программа вернет значение 'Тепло'. Если введенное значение окажется ниже 5
+// градусов, то ответить 'Холодно'. Для остальных значений вернуть значение 'Нормально'. Например,
+// пользователь ввел значение 10. Ответ: 'Нормально'
+
+
+
+// const vvod = prompt('введенное значение: ')
+
+// // if (vvod > 15) {
+// //     console.log('teplo');
+// // } else if (vvod < 5) {
+// //     console.log('holodno');
+// // } else {
+// //     console.log('NORMALNO');
+// // }
+
+// const issue= (vvod>15)? 'teplo'
+// :(vvod < 5)?'holodno'
+// :'normalno'
+// console.log(issue);
+
+
+// Напишите массив дней недели. 
+// ["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+//      Создайте в html элемент div.
+//     В созданный div c помощью цикла for выведите все дни недели,
+//      а выходные дни выведите жирным шрифтом.
+
+const container = document.querySelector('.box1')
+const days=["пн", "вт", "ср", "чт", "пт", "сб", "вс"]
+days.forEach((element,index) => {
+    const twoDays= index>4? 'bold': ''
+    container.innerHTML +=`
+    <p class='${twoDays}' ${element}</p>
+    
+    
+    `
+});

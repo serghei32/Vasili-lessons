@@ -2,3 +2,17 @@
     color: red;
     font-weight: bold;
 }
+
+.frame_m{
+    border: 1px solid red;
+    background-color: aqua;
+}
+
+.frame_w{
+    border: 1px solid rgb(229, 255, 0);
+    background-color: rgb(8, 0, 255);
+}
+
+.weight {
+    font-weight: bold;
+}
