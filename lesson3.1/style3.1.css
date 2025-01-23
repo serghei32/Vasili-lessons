@@ -1,0 +1,27 @@
+body{
+    margin: 100px  auto;
+    max-width: 1100px ;
+    border: 1px solid red;
+    height: 100vh;
+}
+
+.btn {
+    margin: 20px;
+    padding: 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.wrapper{
+    border: 1px solid red;
+    width: 150px;
+   
+
+
+}

@@ -36,20 +36,29 @@ const box4 = document.querySelector('.box4')
 
 const btnM = document.querySelectorAll('.btn') // это перемення в которые записываются в масив  все кнопки 
 console.log(btnM);
-
+selectedItems = []
 btnM.forEach((item, index) => { // по всем кнопкам пробегаем  
     item.addEventListener('click', () => { // каждому эллементу масива кнопок вешаем обработчик событий  который сработает на клик 
         const btnNode = item.value //  создаем переменную которой присвоим свойство кнопки value 
-        products.forEach((product) => {//  проходим по всем продуктам  метоодом forEach  где скажем что если : 
-            if (product.name === btnNode) { //  ключ(name) обьекта{}  равен  значению кнопки btnNode // то выведи следущее : 
-                 box4.innerHTML += `  
+       
+        if (!selectedItems.includes(btnNode)) {
+            products.forEach((product) => { //  проходим по всем продуктам  метоодом forEach  где скажем что если : 
+              
+                if (product.name === btnNode) { //  ключ(name) обьекта{}  равен  значению кнопки btnNode // то выведи следущее : 
+                    selectedItems.push(btnNode)
+                    box4.innerHTML += `  
                 <img src="${product.img}" alt="foto">
                 <p>${product.name}</p>
                 <p>${product.ingredients}</p>
                 <p> price is:${product.price}</p>
                 `
-            }
-        })
+                }
+            })
+
+
+        }
+
+
     })
 
 })
@@ -70,4 +79,3 @@ btnM.forEach((item, index) => { // по всем кнопкам пробегае
 //         }
 //     })
 // }
- 
